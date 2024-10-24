@@ -6,13 +6,13 @@
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:08:21 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/23 11:18:24 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:10:03 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int arg)
+int	ft_isdigit(int c)
 {
-	if (arg >= '0' && arg <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

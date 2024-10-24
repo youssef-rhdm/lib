@@ -6,7 +6,7 @@
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/23 14:41:58 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:15:09 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int main()
 	// 	printf("the character %c(%d) is====> %c \n", i, i, tolower(i));
 	// 	i++;
 	// }
-	printf("result : %s\n", ft_strchr("lorem ipsum fasum",'m'));
-	printf("result : %s\n", strrchr("lorem ipsum fasum",'m'));
+	printf("result : %d\n", ft_strlen("haha"));
+	// printf("result : %d\n", strrchr("lorem ipsum fasum",'m'));
 	return 0;
 }

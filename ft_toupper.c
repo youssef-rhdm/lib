@@ -6,13 +6,13 @@
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:55:49 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/23 14:12:31 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:12:38 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int arg)
+int	ft_toupper(int c)
 {
-	if (arg >= 97 && arg <= 122)
-		arg -= 32;
-	return (arg);
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
 }

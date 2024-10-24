@@ -6,11 +6,11 @@
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:00:59 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/22 13:20:50 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:11:28 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *s)
+int	ft_strlen(const char *s)
 {
 	int	i;
 

@@ -6,13 +6,13 @@
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:11:29 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/23 11:17:25 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:09:46 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int arg)
+int	ft_isascii(int c)
 {
-	if (arg >= 0 && arg <= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

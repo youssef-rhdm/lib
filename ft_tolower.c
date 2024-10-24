@@ -6,13 +6,13 @@
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:14:02 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/23 14:16:39 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:12:35 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int arg)
+int	ft_tolower(int c)
 {
-	if (arg >= 65 && arg <= 90)
-		arg += 32;
-	return (arg);
+	if (c >= 65 && c <= 90)
+		c += 32;
+	return (c);
 }

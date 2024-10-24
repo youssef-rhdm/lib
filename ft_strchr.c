@@ -5,20 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhandou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 14:18:56 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/24 09:45:22 by yrhandou         ###   ########.fr       */
+/*   Created: 2024/10/24 10:13:13 by yrhandou          #+#    #+#             */
+/*   Updated: 2024/10/24 10:13:20 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_schr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (str[i] == c)
-			return (char *)(&str[i]);
+		if (s[i] == c)
+			return (char *)(&s[i]);
 		i++;
 	}
 	return (NULL);
