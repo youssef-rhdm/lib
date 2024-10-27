@@ -1,0 +1,12 @@
+{
+	"files.associations": {
+		"*.ejs": "html",
+		"*.html": "html",
+		"*.js": "javascript",
+		"*.css": "css",
+		"*.php": "php",
+		"locale.h": "c",
+		"stdlib.h": "c",
+		"libft.h": "c"
+	}
+}
