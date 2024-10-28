@@ -6,9 +6,11 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:43:41 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/25 10:47:18 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:58:43 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

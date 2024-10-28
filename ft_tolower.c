@@ -6,9 +6,11 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:14:02 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/24 11:59:21 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:58:34 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

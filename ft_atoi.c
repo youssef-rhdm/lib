@@ -6,9 +6,11 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/27 14:37:56 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:58:48 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

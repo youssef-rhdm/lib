@@ -7,6 +7,9 @@
 		"*.php": "php",
 		"locale.h": "c",
 		"stdlib.h": "c",
-		"libft.h": "c"
-	}
+		"libft.h": "c",
+		"stdio.h": "c",
+		"ctype.h": "c"
+	},
+	"todo-tree.tree.scanMode": "workspace only"
 }
