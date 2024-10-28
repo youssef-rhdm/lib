@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/27 15:50:14 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/28 11:13:56 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,15 @@
 #include "./ft_strrchr.c"
 #include "./ft_atoi.c"
 #include "./ft_strnstr.c"
+#include "./ft_strncmp.c"
 
 int main()
 {
-	char haystack[] = "breaking bad is a good show, i watched it and i like it a lot. ok?";
-	char needle[] = "king";
-	size_t size =200;
-	printf("%s\n", strnstr(haystack, needle,size));
-	printf("%s", ft_strnstr(haystack, needle,size));
+	char s1[] = "yous";
+	char s2[] = "yous4";
+	size_t size = 4;
+	printf("result : %d\n",strncmp(s1,s2,size));
+   printf("result : %d",ft_strncmp(s1,s2,size));
+
 	return 0;
 }
