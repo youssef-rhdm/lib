@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/29 14:21:12 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/30 13:06:21 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,26 +31,14 @@
 #include "./ft_strlcat.c"
 #include "./ft_strlcpy.c"
 #include "./ft_memcpy.c"
+#include "./ft_memcmp.c"
+#include "./ft_memchr.c"
 
 int main()
 {
-	// char src[3] = "Cpp";
-	// char dst[13] = "Nuts Channel";
-	// int srcsize = 6;
-
-	// printf("Original Output : %s / %lu \n", memcpy(dst, src, srcsize), ft_strlen(dst));
-	printf("My Output : %s \n", 	ft_memcpy(NULL, NULL, 3));
-
-	// printf("dst : %s\n", dst);
-
-	// for (size_t i = 0; i < sizeof(dst); i++)
-	// {
-	// 	if (dst[i] == '\0')
-	// 		printf("dst[%d] is null\n", i);
-	// 	else
-	// 	printf("dst : %c \n", dst[i]);
-	// 	/* code */
-	// }
-
+	char *str1 = "1337w";
+	char str2 = '7';
+	size_t size = 4;
+	printf("Original output : %s",ft_memchr(str1,str2,size));
 	return 0;
 }
