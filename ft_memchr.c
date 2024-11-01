@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 12:38:32 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/30 15:00:49 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/10/30 13:07:53 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	str = (unsigned char *)s;
 	while (i < n)
 	{
-		if (str[i] == (unsigned char)c)
+		if (str[i] == c)
 			return (&str[i]);
 		i++;
 	}
