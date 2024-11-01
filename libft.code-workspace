@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../maketest"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.ejs": "html",
+			"*.html": "html",
+			"*.js": "javascript",
+			"*.css": "css",
+			"*.php": "php",
+			"locale.h": "c",
+			"stdlib.h": "c",
+			"libft.h": "c",
+			"stdio.h": "c",
+			"ctype.h": "c"
+		},
+		"todo-tree.tree.scanMode": "workspace only"
+	}
+}
