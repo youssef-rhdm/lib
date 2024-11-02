@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/31 13:07:53 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:03:29 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,16 @@
 #include "./ft_memcmp.c"
 #include "./ft_memchr.c"
 #include "./ft_memmove.c"
+#include "./ft_memset.c"
 #include "./ft_bzero.c"
+#include "./ft_calloc.c"
+#include "./ft_strdup.c"
 
 int main()
 {
-	char dst = "1337leaders";
-	char src[] = "1337x.to";
-	size_t size = 11;
-	printf("%p\n",&dst);
-	printf("%p",&src);
-	// printf("%s\n", memmove(dst, dst+2, size));
-	// printf("%s\n", memmove(dst, dst+2, size));
 
+	char str[] = "hamid" ;
+
+	printf("%s, %s ",str, ft_strdup(str));
 	return 0;
 }
