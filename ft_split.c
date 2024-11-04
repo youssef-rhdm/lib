@@ -1,40 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 16:06:25 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/03 10:47:28 by yrhandou         ###   ########.fr       */
+/*   Created: 2024/11/03 11:49:47 by yrhandou          #+#    #+#             */
+/*   Updated: 2024/11/03 12:09:32 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+int count_delimiter(const char *str, char c)
 {
 	size_t	i;
-	size_t	j;
-	char	*str;
-
-	str = (char *)malloc(sizeof(s) * len +1);
-	if (!str)
-		return (NULL);
+	size_t	count;
 	i = 0;
-	while (s[i] != '\0')
+
+	while (str[i] != '\0')
 	{
-		if (i == start)
-		{
-			j = 0;
-			while (j < len)
-			{
-				str[j] = s[i+j];
-				j++;
-			}
-		}
+		if(str[i] == c)
+			count++;
 		i++;
 	}
-	str[j] = '\0';
-	return str;
+	return count;
+}
+
+char **ft_split(char const *s, char c)
+{
+	// happy birthday
+	size_t i;
+	char *str;
+	int delimter_count;
+
+	delimter_count = count_delimiter(s,c);
+	str = (char *)malloc(sizeof(s));
+
+	i = 0;
+	while (s[i] != c)
+	{
+
+		i++;
+	}
 }

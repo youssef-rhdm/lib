@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:46:35 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/02 16:05:37 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/03 10:49:33 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char *ft_strdup(const char *s1)
 	while (s1[len] != '\0')
 		len++;
 	str = (unsigned char *) malloc(sizeof(char) *i);
+	if (!str)
+		return (NULL);
 	i = 0;
 	while(i < len )
 	{

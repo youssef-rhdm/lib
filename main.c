@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/02 18:21:25 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/03 12:11:54 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,14 @@
 #include "./ft_bzero.c"
 #include "./ft_calloc.c"
 #include "./ft_strdup.c"
+#include "./ft_substr.c"
+#include "./ft_strjoin.c"
+// #include "./ft_split.c"
 
 int main()
 {
 
-	char *dest = NULL ;
-	char *src = NULL ;
-	ft_memmove(dest, src,5);
-	printf("%s,  ",dest);
+	char  nums[10][10] = {"happy","birthday","to","you"} ;
+	printf("%lu",sizeof(nums[10][0]));
 	return 0;
 }
