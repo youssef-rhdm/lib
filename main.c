@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/05 11:07:45 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/05 11:12:04 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,6 @@ int main()
 {
 
 	char  nums[10][10] = {"happy","birthday","to","you"} ;
-	printf("%lu",sizeof(nums[10][0]));
+git staus	printf("%lu",sizeof(nums[10][0]));
 	return 0;
 }
