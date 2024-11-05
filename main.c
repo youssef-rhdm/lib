@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/03 12:11:54 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/04 15:06:46 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@
 #include "./ft_substr.c"
 #include "./ft_strjoin.c"
 // #include "./ft_split.c"
+#include "./ft_strtrim.c"
 
 int main()
 {
