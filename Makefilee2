@@ -1,7 +1,8 @@
-CC=cc
-CFLAGS=-Wall -Wextra -Werror
-SRC=ft_atoi.c \
-ft_bzero.c \
+NAME = main
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
+SRC = 	ft_bzero.c \
+		ft_atoi.c \
 ft_calloc.c\
  ft_isalnum.c \
 ft_isalpha.c \
@@ -28,13 +29,12 @@ ft_strtrim.c \
 ft_substr.c \
 ft_tolower.c \
 ft_toupper.c \
-OBJ=$(SRC:.c=.o)
-NAME=main
+main.c
 
+OBJ=$(SRC:.c=.o)
 all:$(NAME)
 
-$(NAME):$(OBJ)
-	$(CC) $^ -o $@
+
 
 # $(OBJ):$(SRC)
 # 	$(CC) $(CFLAGS) -c $^
@@ -42,6 +42,9 @@ $(NAME):$(OBJ)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+
+$(NAME):$(OBJ)
+	$(CC) $^ -o $@
 clean:
 	rm -rf $(OBJ)
 
