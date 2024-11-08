@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/07 11:26:50 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/08 07:50:41 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@
 int main()
 {
 	printf("\033[0;31m");
-	printf("%s", ft_strtrim("h123132","123"));
+	printf("%s", "habibi");
 	return 0;
 }
