@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/08 11:50:19 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:52:43 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int main()
 	char *str1 = "aslkmask";
 
 	printf("\e[0;31m");
-	printf("%d\n", ft_atoi("45687"));
+	printf("Red : %d\n", ft_atoi("+-54"));
 	printf("\e[0;32m");
-	printf("%d\n",  atoi("45687"));
+	printf("Green :%d\n", atoi("+-54"));
 	return 0;
 }
