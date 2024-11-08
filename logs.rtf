@@ -1,28 +1,3 @@
-Errors in memset: /home/ryu/francinette/temp/libft/war-machine/tests/Part1_functions/ft_memset
-Test 1:
-    if (mem != ft_memset(mem, 'c', 5))
-        write(1, "mem's adress was not returned\n", 30);
-    write(1, mem, 15);
-Expected (cat -e test01.output):
-cccccjjjjjjjjjj
-Your result (cat -e user_output_test01):
-cccccjjjjjjjjjj
-Test 2:
-    if (mem != ft_memset(mem, 'c', 14))
-        write(1, "mem's adress was not returned\n", 30);
-    write(1, mem, 15);
-Expected (cat -e test02.output):
-ccccccccccccccj
-Your result (cat -e user_output_test02):
-ccccccccccccccj
-Test 4:
-    if (mem != ft_memset(mem, '\0', 1))
-        write(1, "mem's adress was not returned\n", 30);
-    write(1, mem, 15);
-Expected (cat -e test04.output):
-^@jjjjjjjjjjjjjj
-Your result (cat -e user_output_test04):
-^@jjjjjjjjjjjjjj
 Errors in memchr: /home/ryu/francinette/temp/libft/war-machine/tests/Part1_functions/ft_memchr
 Test 6:
     int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
