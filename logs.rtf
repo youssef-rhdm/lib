@@ -1,4 +1,28 @@
-
+Errors in memset: /home/ryu/francinette/temp/libft/war-machine/tests/Part1_functions/ft_memset
+Test 1:
+    if (mem != ft_memset(mem, 'c', 5))
+        write(1, "mem's adress was not returned\n", 30);
+    write(1, mem, 15);
+Expected (cat -e test01.output):
+cccccjjjjjjjjjj
+Your result (cat -e user_output_test01):
+cccccjjjjjjjjjj
+Test 2:
+    if (mem != ft_memset(mem, 'c', 14))
+        write(1, "mem's adress was not returned\n", 30);
+    write(1, mem, 15);
+Expected (cat -e test02.output):
+ccccccccccccccj
+Your result (cat -e user_output_test02):
+ccccccccccccccj
+Test 4:
+    if (mem != ft_memset(mem, '\0', 1))
+        write(1, "mem's adress was not returned\n", 30);
+    write(1, mem, 15);
+Expected (cat -e test04.output):
+^@jjjjjjjjjjjjjj
+Your result (cat -e user_output_test04):
+^@jjjjjjjjjjjjjj
 Errors in memchr: /home/ryu/francinette/temp/libft/war-machine/tests/Part1_functions/ft_memchr
 Test 6:
     int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
@@ -26,40 +50,3 @@ Expected (cat -e test09.output):
 NULL
 Your result (cat -e user_output_test09):
 dolor sit amet
-Errors in atoi: /home/ryu/francinette/temp/libft/war-machine/tests/Part1_functions/ft_atoi
-Test 7:
-    ft_print_result(ft_atoi("+-54"));
-Expected (cat -e test07.output):
-0
-Your result (cat -e user_output_test07):
--54
-Test 8:
-    ft_print_result(ft_atoi("-+48"));
-Expected (cat -e test08.output):
-0
-Your result (cat -e user_output_test08):
--48
-Test 9:
-    ft_print_result(ft_atoi("--47"));
-Expected (cat -e test09.output):
-0
-Your result (cat -e user_output_test09):
-47
-Test 10:
-    ft_print_result(ft_atoi("++47"));
-Expected (cat -e test10.output):
-0
-Your result (cat -e user_output_test10):
-47
-Test 14:
-    ft_print_result(ft_atoi("\t\n\r\v\f  469 \n"));
-Expected (cat -e test14.output):
-469
-Your result (cat -e user_output_test14):
-0
-Test 18:
-    ft_print_result(ft_atoi("\n\n\n  -46\b9 \n5d6"));
-Expected (cat -e test18.output):
--46
-Your result (cat -e user_output_test18):
-0
