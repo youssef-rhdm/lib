@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/28 14:58:48 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:50:33 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	i = 0;
 	result = 0;
+	if (str[i] ==32 || (str[i]>=9 && str[i]<=13))
+		i++;
 	while (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')

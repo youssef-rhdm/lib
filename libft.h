@@ -6,13 +6,13 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:15 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/05 16:53:28 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/08 08:39:55 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdio.h>
+
 # include <stdlib.h>
 # include <unistd.h>
 
