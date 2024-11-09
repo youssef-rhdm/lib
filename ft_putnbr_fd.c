@@ -6,11 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:47:58 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 10:56:42 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:40:50 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// TODO wHY IS THIs false
 
 void	ft_putnbr_fd(int n, int fd)
 {
