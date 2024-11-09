@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:47:58 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 13:19:23 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 16:00:33 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (n < 0)
 	{
 		n *= -1;
-		write(fd, "-",1);
+		write(fd, "-", 1);
 		ft_putnbr_fd(n, fd);
 	}
 	else if (n > 9)
