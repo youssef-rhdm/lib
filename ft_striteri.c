@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 09:25:52 by yrhandou         ###   ########.fr       */
+/*   Created: 2024/11/09 08:43:57 by yrhandou          #+#    #+#             */
+/*   Updated: 2024/11/09 08:45:52 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <limits.h>
 
-int main()
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	ft_putchar_fd('c',-1);
-	write(-1,"c",1);
-	write(-1,"c",1);
-	return 0;
+	
 }

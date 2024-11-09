@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 09:25:52 by yrhandou         ###   ########.fr       */
+/*   Created: 2024/11/09 08:47:58 by yrhandou          #+#    #+#             */
+/*   Updated: 2024/11/09 08:50:08 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <limits.h>
 
-int main()
+void ft_putnbr_fd(int n, int fd)
 {
-	ft_putchar_fd('c',-1);
-	write(-1,"c",1);
-	write(-1,"c",1);
-	return 0;
+	return;
 }

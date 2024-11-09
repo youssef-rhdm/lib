@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 09:25:52 by yrhandou         ###   ########.fr       */
+/*   Created: 2024/11/09 08:46:40 by yrhandou          #+#    #+#             */
+/*   Updated: 2024/11/09 08:52:39 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <limits.h>
 
-int main()
+char *ft_itoa(int n)
 {
-	ft_putchar_fd('c',-1);
-	write(-1,"c",1);
-	write(-1,"c",1);
-	return 0;
+	return;
 }

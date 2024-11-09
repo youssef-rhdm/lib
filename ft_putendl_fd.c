@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 09:25:52 by yrhandou         ###   ########.fr       */
+/*   Created: 2024/11/09 08:40:58 by yrhandou          #+#    #+#             */
+/*   Updated: 2024/11/09 09:10:49 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include <limits.h>
 
-int main()
+void ft_putendl_fd(char *s, int fd)
 {
-	ft_putchar_fd('c',-1);
-	write(-1,"c",1);
-	write(-1,"c",1);
-	return 0;
+	size_t	i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+	// s[i] = '\0';
 }
