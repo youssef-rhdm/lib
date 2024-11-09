@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:43:57 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 08:45:52 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 10:56:03 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	
+	return:
 }

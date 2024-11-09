@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:15 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 09:10:37 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 10:25:15 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	*ft_calloc(size_t count, size_t size);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(char c, int fd);
+void	ft_putnbr_fd(int c, int fd);
 void	ft_bzero(void *s, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);

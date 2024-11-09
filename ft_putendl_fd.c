@@ -6,13 +6,15 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:40:58 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 09:10:49 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 10:56:20 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl_fd(char *s, int fd)
+// TODO wHY IS THIS NOT COMPILING
+
+void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	i;
 
@@ -22,5 +24,5 @@ void ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
-	// s[i] = '\0';
+	s[i] = '\0';
 }

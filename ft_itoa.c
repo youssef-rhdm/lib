@@ -6,13 +6,13 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:46:40 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 08:52:39 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 10:56:57 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	return;
 }
