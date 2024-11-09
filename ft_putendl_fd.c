@@ -6,13 +6,11 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:40:58 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 11:40:42 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/09 13:19:40 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// TODO wHY IS THIs false
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -24,5 +22,5 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
-	s[i] = '\0';
+	s[i] = '\n';
 }
