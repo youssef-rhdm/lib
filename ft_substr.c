@@ -6,12 +6,13 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 16:06:25 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/07 10:33:29 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/12 16:43:07 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// todo check allocation  size
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;

@@ -1,0 +1,13 @@
+Issues in the Code:
+
+    ft_substr Memory Allocation:
+
+str = (char *)malloc(sizeof(s) * len + 1);
+
+Here, you are allocating memory for str using sizeof(s), which gives the size of the pointer to the string (char *), not the actual size of the string. You should instead allocate memory based on the length of the substring, which should be sizeof(char) * (len + 1) or simply (len + 1) since sizeof(char) is always 1.
+
+ft_strtrim Return: The ft_strtrim function is trimming the string but doesn't handle the case where the string is fully trimmed or the trimmed string has no characters. It may return an invalid pointer or a string that isn’t null-terminated properly.
+
+Splitting Logic: The ft_split function is using ft_strtrim with a pointer to the delimiter &c, but ft_strtrim expects a string (char *set) as its second argument, not a pointer to a single character. You should pass a string containing the delimiter (i.e., "_").
+
+Memory Leak: In your main function, you are calling ft_split and printing the result, but the allocated memory for the returned array and substrings is never freed, which will result in a memory leak.
