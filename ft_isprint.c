@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:52:09 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/25 10:44:32 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/15 15:54:13 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
+	if ((unsigned char)c >= 32 && (unsigned char)c <= 126)
 		return (1);
 	return (0);
 }
