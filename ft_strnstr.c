@@ -6,12 +6,14 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:41:54 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 10:54:33 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:44:12 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
+#include <string.h>
+// TODO FIX SEGFAULT ON NULL + EMPTY??/
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
@@ -39,3 +41,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+

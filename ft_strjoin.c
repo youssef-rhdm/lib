@@ -6,12 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 10:51:02 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/06 10:17:38 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/13 16:09:56 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// TODO HANDLE NULL  WITH NULL POSSIBILITIES
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;

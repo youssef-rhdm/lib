@@ -6,12 +6,14 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:08:00 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/10/30 13:12:45 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:44:05 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
+#include <string.h>
+// TODO FIX SEGFAULT
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	ld;
@@ -33,3 +35,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[ld + j] = '\0';
 	return (ld + ls);
 }
+

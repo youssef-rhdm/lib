@@ -6,12 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:07:03 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/08 14:51:08 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/13 16:20:06 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// Todo handle null
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	x;

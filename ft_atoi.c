@@ -6,12 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 10:57:16 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:29:22 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// TODO HANDLE ATOI CORRECTLY
 int	ft_atoi(const char *str)
 {
 	int	i;
@@ -29,9 +29,11 @@ int	ft_atoi(const char *str)
 			sign *= -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]))
 	{
-		result = result * 10 + (str[i] - '0');
+		// if (str > "9223372036854775807")
+		// 	return -1;
+			result = result * 10 + (str[i] - '0');
 		i++;
 	}
 	return (result * sign);

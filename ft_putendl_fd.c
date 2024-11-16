@@ -6,12 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:40:58 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 13:50:40 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:44:30 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// todo handle NULL
 void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	i;
@@ -24,3 +24,5 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
+
+

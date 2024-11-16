@@ -6,12 +6,11 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:46:40 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/11 11:53:06 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/14 14:44:57 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	count_num(int num)
 {
@@ -49,7 +48,6 @@ char	*ft_itoa(int n)
 	char	*str;
 
 	count = count_num(n);
-	printf("%d\n", count);
 	if (n < 0)
 		return (itoa_ft(count, n));
 	str = (char *)malloc(count + 2);

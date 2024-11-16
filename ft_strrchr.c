@@ -6,24 +6,24 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:43:41 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/08 09:25:14 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/16 09:27:48 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// TODO why is strrchr need final check
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = ft_strlen(s);
-	while (i > 0)
+	while (i >= 0)
 	{
 		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)(&s[i]));
 		i--;
 	}
-	if ((unsigned char)s[i] == (unsigned char)c)
-		return ((char *)(&s[i]));
+	// if ((unsigned char)s[i] == (unsigned char)c)
+	// 	return ((char *)(&s[i]));
 	return (NULL);
 }
