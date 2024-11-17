@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:46:40 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/14 14:44:57 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/17 16:43:09 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*ft_itoa(int n)
 	count = count_num(n);
 	if (n < 0)
 		return (itoa_ft(count, n));
-	str = (char *)malloc(count + 2);
+	str = (char *)malloc(count + 1);
 	if (!str)
 		return (NULL);
 	else

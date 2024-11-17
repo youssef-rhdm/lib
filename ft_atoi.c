@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/16 19:29:22 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/17 16:30:26 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 // TODO HANDLE ATOI CORRECTLY
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int				i;
+	int				sign;
+	unsigned long	result;
 
 	sign = 1;
 	i = 0;
@@ -31,9 +31,11 @@ int	ft_atoi(const char *str)
 	}
 	while (ft_isdigit(str[i]))
 	{
-		// if (str > "9223372036854775807")
-		// 	return -1;
-			result = result * 10 + (str[i] - '0');
+		result = result * 10 + (str[i] - '0');
+		if ((result > LONG_MAX && sign == 1))
+			return (-1);
+		if (result > (unsigned long)LONG_MAX + 1 && sign == -1)
+			return (0);
 		i++;
 	}
 	return (result * sign);
