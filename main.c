@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:18:33 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/17 17:25:27 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/17 19:53:29 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,17 @@
 #include <limits.h>
 #include <ctype.h>
 #include <fcntl.h>
-int main()
-{
-	// static int i;
-	// static int j = 5;
-	// char *hay = "";
-	// char *hh = "stars";
-	// char *need = "sta";
-	// (void)hh;
-	// printf("%s\n",ft_strnstr(hay, need, 10));
-	// printf("%s",     strnstr(hay, need, 10));
-	int fd = open("Makefile", O_WRONLY);
-	while (1)
-	{
 
+int main(int argc, char const *argv[])
+{
+	char *str = "llll";
+	int word_count = 4;
+	int i = 0;
+	char **newarray = ft_split("ggggggggggg", 'g');
+	while (newarray[i])
+	{
+		printf("Word %d :%s\n", i + 1, newarray[i]);
+		i++;
 	}
 	return 0;
 }

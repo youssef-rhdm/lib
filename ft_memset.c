@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 09:54:38 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/17 17:37:42 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/17 19:31:36 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-int main(int argc, char const *argv[])
-{
-	int i = 0;
-	ft_memset(&i,0,4);
-	ft_memset(&i,0x0, 4);
-	ft_memset(&i, 0x5, 2);
-	ft_memset(&i, 0x39, 1);
-	printf("%d",i);
-	return 0;
-}
-
