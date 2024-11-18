@@ -6,12 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/17 16:30:26 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/18 12:18:55 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// TODO HANDLE ATOI CORRECTLY
+
 int	ft_atoi(const char *str)
 {
 	int				i;

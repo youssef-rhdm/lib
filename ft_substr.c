@@ -6,19 +6,17 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 16:06:25 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/17 14:55:07 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/18 12:19:25 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// todo check allocation  size
-#include <stdio.h>
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	size_t	length;
 	char	*str;
-	size_t length;
 
 	length = ft_strlen(s);
 	if (length <= start)
@@ -36,9 +34,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-// int main(int argc, char const *argv[])
-// {
-// 	printf("str: %s\n", ft_substr("",1,1));
-// 	return 0;
-// }
-

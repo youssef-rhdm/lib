@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:08:00 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/14 11:44:05 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/18 12:18:28 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[ld + j] = '\0';
 	return (ld + ls);
 }
-

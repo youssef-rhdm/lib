@@ -6,12 +6,11 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 11:49:47 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/17 20:39:18 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/18 12:17:22 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 // todo fix segfault on full size
 static int	word_counter(char const *str, char c)
 {
@@ -34,21 +33,21 @@ static int	word_counter(char const *str, char c)
 	return (counter);
 }
 
-int count_sub(char const *str, char c)
+static int	count_sub(char const *str, char c)
 {
 	int	i;
 
-	i=0;
+	i = 0;
 	while (str[i] != c && str[i])
 		i++;
-	return i;
+	return (i);
 }
 
-char **free_arr(char **str)
+static char	**free_arr(char **str)
 {
-	int i;
+	int	i;
 
-	i=-1;
+	i = -1;
 	while (str[++i])
 		free(str[i]);
 	free(str);
@@ -66,19 +65,19 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	x = -1;
-	//s = ft_strtrim(s,&c);
-	while (s[i]!= '\0')
+	while (s[i] != '\0')
 	{
 		while (s[i] && s[i] == c)
 			i++;
 		if (s[i])
-			str[++x] = ft_substr(s,i,count_sub(&s[i],c));
-		if (!str[x])
-			return (free_arr(str));
+		{
+			str[++x] = ft_substr(s, i, count_sub(&s[i], c));
+			if (!str[x])
+				return (free_arr(str));
+		}
 		while (s[i] != c && s[i])
 			i++;
 	}
 	str[++x] = NULL;
 	return (str);
 }
-
