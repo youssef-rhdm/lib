@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:05:10 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/05 10:41:51 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/19 10:38:46 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,13 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*ptr;
 	size_t			i;
+	size_t			alloc_size;
 
+	alloc_size = size * count;
+	if (count && size && alloc_size / count != size)
+		return (NULL);
 	i = 0;
-	ptr = (unsigned char *)malloc(size * count);
+	ptr = (unsigned char *)malloc(alloc_size);
 	if (ptr == NULL)
 		return (NULL);
 	while (i < count * size)

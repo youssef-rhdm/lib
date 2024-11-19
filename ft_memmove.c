@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:07 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/05 11:06:39 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:37:51 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	dest = (unsigned char *)dst;
 	srce = (const unsigned char *)src;
-	if (len == 0)
-		return (dst);
+	if (!dest && !src)
+		return (NULL);
+	if (dest == srce)
+		return (dest);
 	if (dest > srce)
 	{
-		i = len;
-		while (i--)
-			dest[i] = srce[i];
+		while (len--)
+			dest[len] = srce[len];
 	}
 	else if (dest < srce)
 	{
