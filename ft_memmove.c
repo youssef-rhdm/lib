@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:07 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/18 16:37:51 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/20 12:07:24 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	srce = (const unsigned char *)src;
 	if (!dest && !src)
 		return (NULL);
-	if (dest == srce)
-		return (dest);
 	if (dest > srce)
 	{
 		while (len--)

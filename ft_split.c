@@ -6,12 +6,12 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 11:49:47 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/18 12:17:22 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/20 13:52:25 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// todo fix segfault on full size
+
 static int	word_counter(char const *str, char c)
 {
 	int	counter;
@@ -60,6 +60,8 @@ char	**ft_split(char const *s, char c)
 	int		x;
 	char	**str;
 
+	if (!s)
+		return (NULL);
 	str = (char **)malloc(sizeof(char *) * (word_counter(s, c) + 1));
 	if (!str)
 		return (NULL);
@@ -78,6 +80,5 @@ char	**ft_split(char const *s, char c)
 		while (s[i] != c && s[i])
 			i++;
 	}
-	str[++x] = NULL;
-	return (str);
+	return (str[++x] = NULL, str);
 }

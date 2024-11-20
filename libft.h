@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:48:15 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/17 16:08:45 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/19 11:53:18 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <limits.h>
-// todo split
+
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strdup(const char *s1);

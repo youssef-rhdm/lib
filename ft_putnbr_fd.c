@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 08:47:58 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/09 16:00:33 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/20 13:20:07 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int	x;
-	int	y;
-
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
@@ -24,18 +21,14 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (n < 0)
 	{
 		n *= -1;
-		write(fd, "-", 1);
+		ft_putchar_fd('-', fd);
 		ft_putnbr_fd(n, fd);
 	}
 	else if (n > 9)
 	{
-		x = n / 10;
-		y = n % 10;
-		ft_putnbr_fd(x, fd);
-		ft_putnbr_fd(y, fd);
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
 	}
 	else
-	{
 		ft_putchar_fd(n + 48, fd);
-	}
 }

@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:14:02 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/15 16:24:43 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/19 19:18:10 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if ((unsigned char)c >= 65 && (unsigned char)c <= 90)
+	if (c >= 65 && c <= 90)
 		c += 32;
 	return (c);
 }

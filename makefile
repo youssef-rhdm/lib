@@ -17,10 +17,11 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OBJECT_FILES)
-	ar -rc $(NAME) $(OBJECT_FILES)
+	ar rc $(NAME) $^
 
-$(OBJECT_FILES): $(SOURCE_FILES) libft.h
-	$(CC) $(CFLAGS) -c $(SOURCE_FILES)
+
+%.o : %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJECT_FILES)
