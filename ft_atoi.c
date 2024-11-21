@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/20 16:09:24 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:43:00 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,18 @@ int	ft_atoi(const char *str)
 {
 	int				i;
 	int				sign;
-	unsigned long	temp;
-	unsigned long	result;
+	long long		temp;
+	long long		result;
 
 	sign = 1;
 	i = 0;
 	result = 0;
-	temp = 9223372036854775807;
 	i = sign_check(str, &sign);
 	while (ft_isdigit(str[i]))
 	{
 		temp = result;
 		result = result * 10 + (str[i] - '0');
-		if (result > temp + (str[i] - '0') / 10)
+		if (result / 10 != temp)
 		{
 			if (sign == 1)
 				return (-1);
@@ -53,11 +52,4 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return ((int)(result * sign));
-}
-#include <libc.h>
-int main()
-{
-	char s[] = "-9223372036854775807";
-	printf("%d\n\n", ft_atoi(s));
-	printf("%d\n", atoi(s));
 }

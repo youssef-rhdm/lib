@@ -19,7 +19,6 @@ all: $(NAME)
 $(NAME): $(OBJECT_FILES)
 	ar rc $(NAME) $^
 
-
 %.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 

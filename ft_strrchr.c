@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 14:43:41 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/19 13:50:44 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:03:32 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (i > 0)
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
+		if (s[i] == (char)c)
 			return ((char *)(&s[i]));
 		i--;
 	}
-	if ((unsigned char)s[i] == (unsigned char)c)
+	if (s[i] == (char)c)
 		return ((char *)(&s[i]));
 	return (NULL);
 }
