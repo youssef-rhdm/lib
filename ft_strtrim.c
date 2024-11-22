@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:07:03 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/19 19:25:49 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/22 19:34:56 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1)
 		return (NULL);
 	if (!set)
-		return (ft_strdup(""));
+		return (ft_strdup(s1));
 	len = ft_strlen(s1);
 	x = 0;
 	while (s1[x] && ft_strchr(set, s1[x]))
