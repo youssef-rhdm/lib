@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:33:26 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/21 14:43:00 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/22 20:32:01 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ int	ft_atoi(const char *str)
 {
 	int				i;
 	int				sign;
-	long long		temp;
-	long long		result;
+	long 		temp;
+	long 		result;
 
 	sign = 1;
 	i = 0;

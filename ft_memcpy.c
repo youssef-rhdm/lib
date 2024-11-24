@@ -6,7 +6,7 @@
 /*   By: yrhandou <yrhandou@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:05:42 by yrhandou          #+#    #+#             */
-/*   Updated: 2024/11/22 18:00:28 by yrhandou         ###   ########.fr       */
+/*   Updated: 2024/11/24 10:25:37 by yrhandou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	dest = (unsigned char *)dst;
 	sorc = (const unsigned char *)src;
-	if (dest == sorc)
-		return (dest);
+	// if (dest == sorc)
+	// 	return (dest);
 	i = 0;
 	while (i < n)
 	{
